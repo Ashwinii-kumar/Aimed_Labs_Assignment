@@ -47,16 +47,18 @@ const LoginForm = () => {
               </label>
             </div>
 
-            <button type="submit">Login</button>
-          </div>
-        </form>
-      </div>
-      <span style={{ marginTop: "1rem" }}>
+            <button type="submit">Login</button><br />
+            <p style={{textAlign:"center",marginTop:"2.2rem"}} >
         Don't have an account?{" "}
         <a style={{ textDecoration: "underline" }} href="#">
           Register Here
         </a>
-      </span>
+      </p>
+          </div>
+
+        </form>
+      </div>
+    
     </div>
   );
 };
