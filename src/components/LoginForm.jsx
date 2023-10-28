@@ -1,4 +1,5 @@
 import React from "react";
+import {BiHide} from 'react-icons/bi';
 
 const LoginForm = () => {
   return (
@@ -17,7 +18,7 @@ const LoginForm = () => {
                 placeholder="Enter Login ID"
               />
             </div>
-            <div>
+            <div style={{position:"relative"}}>
               <label htmlFor="password">Password</label>
               <br></br>
               <input
@@ -26,9 +27,10 @@ const LoginForm = () => {
                 id="password"
                 placeholder="Enter Password"
               />
+              <BiHide  style={{position:"absolute",top:"30px",right:"15px"}}/>
             </div>
             <div className="form-field">
-              <div>
+              <div style={{display:"flex",alignItems:"center"}}>
                 <label>
                   <input type="checkbox" />
                   <p>Remember Me</p>
@@ -37,7 +39,7 @@ const LoginForm = () => {
 
               <button type="button">Change Password</button>
             </div>
-            <div>
+            <div style={{display:"flex",alignItems:"center"}}>
               <label>
                 <input type="checkbox" />
                 Agree To{" "}

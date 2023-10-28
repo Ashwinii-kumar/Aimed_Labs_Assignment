@@ -30,10 +30,18 @@ export const GlobalStyles = createGlobalStyle`
     padding-top:8rem;
     padding-bottom:8rem;
     
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
     width:95%;
   }
+    
+  @media (max-width: 700px) {
+    width:95%;
+    padding-left:2rem;
 
+padding-right:2rem;
+padding-top:4rem;
+padding-bottom:4rem;
+  }
 }
 
 .form-container{
@@ -55,12 +63,15 @@ export const GlobalStyles = createGlobalStyle`
     .form-field{
     display:flex;
     justify-content:space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
 
    
 
     p{
         display:inline ;
-        margin-bottom: 15px;
+        
 
     }
 }
@@ -88,13 +99,10 @@ export const GlobalStyles = createGlobalStyle`
     }
     input[type="checkbox"]{
         margin-right: 5px;
-        margin-top: 12px;
+        ${'' /* margin-top: 12px; */}
     }
   
 
-}
-.span{
-    padding-bottom: 5px;
 }
 
 
@@ -112,7 +120,7 @@ a{
 button[type="submit"]{
    background-color: #2d75a7;
    color:white;
-   width:80%;
+   width:85%;
    margin-left:10%;
    margin-top: 2rem;
    padding: .5rem .5rem;

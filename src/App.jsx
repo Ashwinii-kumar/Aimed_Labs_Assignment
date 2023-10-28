@@ -11,7 +11,7 @@ const App = () => {
       <Container>
         <Container2>
           <div className="images">
-            <Image src="./src/assets/img.jpg" />
+            <Image src="https://res.cloudinary.com/duclatpvk/image/upload/v1698523242/temp/Group_3608_dx7ewz.jpg" alt="none"/>
           </div>
           <LoginForm />
         </Container2>
